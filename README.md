@@ -4,17 +4,19 @@ https://linuxhint.com/lamp_server_docker/
 ## Running instructions for LAMP
 ### Installation
 ```
-cd lamp
-docker-compose up
+# Spin up or to re-initialize and re-spin up
+./spin_up.bash
 ```
-
+```
+./spin_down.bash
+```
 ## Useful Commands
 To see port mapping after <code>docker-compose up</code>
 ```
 docker-compose ps
 ```
 
-## Visit the PHP admin
+## Visit the PHP admin;
 ```
 http://localhost:5000/
 #or

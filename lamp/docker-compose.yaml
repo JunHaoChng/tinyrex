@@ -7,8 +7,10 @@ services:
     restart: always
     volumes:
       - "./html/:/var/www/html/"
+      - "./assets/:/var/www/html/assets"
     ports:
       - "8080:80"
+
   mysql-server:
     image: mysql:8.0.19
     restart: always
