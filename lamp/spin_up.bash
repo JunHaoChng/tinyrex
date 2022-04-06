@@ -3,11 +3,12 @@
 # Check if docker is running
 # echo "Check if docker is running"
 # DOCK_UP=$(docker info | grep -c Error)
+# if (($DOCK_UP >=1)); then
+#     echo "Docker daemon is not running"
+# fi
 
 # if (($(which docker))); then
 
-
-# if (($DOCK_UP >=1)); then
 
 
 # Check if server is already up

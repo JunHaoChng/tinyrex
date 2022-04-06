@@ -15,7 +15,11 @@ To see port mapping after <code>docker-compose up</code>
 ```
 docker-compose ps
 ```
-
+To see the network for the created containers
+```
+docker network ls
+docker inspect NETWORKNAME
+```
 ## Visit the PHP admin;
 ```
 http://localhost:5000/

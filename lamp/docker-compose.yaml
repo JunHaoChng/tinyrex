@@ -6,8 +6,9 @@ services:
       context: .
     restart: always
     volumes:
-      - "./html/:/var/www/html/"
-      - "./assets/:/var/www/html/assets"
+      # - "./html/:/var/www/html/"
+      - "./assets/gallery:/var/www/html/assets/gallery"
+      - "./assets/wordpress/:/var/www/html/"
     ports:
       - "8080:80"
 
@@ -28,6 +29,6 @@ services:
       PMA_PASSWORD: secret
     ports:
       - "5000:80"
+
 volumes:
   mysql-data:
-
