@@ -6,7 +6,6 @@ services:
       context: .
     restart: always
     volumes:
-      # - "./html/:/var/www/html/"
       - "./assets/gallery:/var/www/html/assets/gallery"
       - "./assets/wordpress/:/var/www/html/"
     ports:
